@@ -1,10 +1,5 @@
- <cfquery datasource="woody" name="qWoodDust">
-       SELECT ModelName, Manufacturer, Output,ProductID
-       FROM ProductInfo
-       WHERE FuelCompatibleSawDust = 'Y'
- </cfquery>
- 
- <html>
+<!DOCTYPE  html>
+<html>
  <head lang="en">
       <meta charset = "utf-8">
       <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
@@ -27,30 +22,11 @@
    <body >
    		<cfinclude template="header.cfm" >
    	<div class="container">
+   		<h1>Coming Soon</h1>
+   		
+  
  
-<!--- Display Product info on all of the WoodPellets --->
-   <div id="infoTable"> <!---opening div for table --->
-     	<h1>Saw Dust Product Information</h1>
-       	<table width="100%" border="1" cellspacing="0">
-			  <tr>
-				    <td>ModelName</td>
-				    <td>Manufacturer</td>
-				    <td>Output</td>
-				     
-			  </tr>
-			 <cfoutput query=qWoodDust>
-             	 <tr>
-					    <td> <a href="productDetails.cfm?WOODID=#qWoodDust.ProductID#">#qWoodDust.ModelName#</a></td>
-					    <td>#qWoodDust.Manufacturer#</td>
-					    <td>#qWoodDust.Output#</td>
-					    <!---Dynamic URL refer to video Creating Tours interface --->
-					    
-				  </tr>
-             </cfoutput>
-		</table>
-</div> <!---closing div for table --->
-
-</div>
+ </div>
     	 <!---jQuery for bootstrap--->
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>

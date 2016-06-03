@@ -1,7 +1,3 @@
-
- 
-
-
 <!DOCTYPE  html>
 <html>
  <head lang="en">
@@ -26,6 +22,7 @@
    <body >
    		<cfinclude template="header.cfm" >
    	<div class="container">
+   		<!---<cfinclude template="brandHeader.cfm" >--->
    <div class="row">
 <p>This page lets users navigate through the list of various commercially available wood
 burning appliances along with their completed specification and manufacturer details
@@ -41,7 +38,7 @@ results based on the type of fuel they are interested in.
  </div>
  
 <div class="row">
- <div class="col-lg-6 ">
+ <div class="col-lg-3 ">
  	
  	<!--- begin form --->
  	
